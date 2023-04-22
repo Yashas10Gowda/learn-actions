@@ -1,0 +1,16 @@
+name: Simple Shell Commands
+
+on: [push]
+
+jobs:
+    run-simple-shell-commands:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echo Hello World
+              run: echo "Hello World"
+
+            - name: Multiline Commands
+              run: |
+                node -v
+                npm -v
+              
