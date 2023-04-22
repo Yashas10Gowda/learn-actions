@@ -29,3 +29,4 @@ jobs:
           - name: Get location in bash
             run: pwd
             shell: bash
+        needs: [run-simple-shell-commands]
