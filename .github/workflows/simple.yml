@@ -19,4 +19,13 @@ jobs:
                   print("Hello, World")
                   print("Hi, World")
               shell: python
-              
+    
+    run-windows-commands:
+        runs-on: windows-latest
+        steps:
+          - name: Get location in powershell
+            run: Get-Location
+          
+          - name: Get location in bash
+            run: pwd
+            shell: bash
