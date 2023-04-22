@@ -7,13 +7,16 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Echo Hello World
-              run: echo "Hello World"
+              run: echo "Hello, World"
 
             - name: Multiline Commands
               run: |
                 node -v
                 npm -v
             
-            - name: Fail this jobs
-              run: fail-this-job-cmd
+            - name: Run python in shell
+              run: |
+                  print("Hello, World")
+                  print("Hi, World")
+              shell: python
               
