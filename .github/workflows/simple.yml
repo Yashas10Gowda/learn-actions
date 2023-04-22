@@ -1,6 +1,6 @@
 name: Simple Shell Commands
 
-on: [push]
+on: push
 
 jobs:
     run-simple-shell-commands:
