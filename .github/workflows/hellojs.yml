@@ -3,6 +3,8 @@ on:
   push:
   pull_request:
     types: [closed, reopened, assigned, opened]
+  schedule:
+    - cron: "0/5 * * * *"
 jobs:
   simple-hello-in-js:
     runs-on: ubuntu-latest
