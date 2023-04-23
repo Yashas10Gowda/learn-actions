@@ -1,0 +1,16 @@
+name: Simple JS execution
+on: push
+jobs:
+  simple-hello-in-js:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Running a 3rd party action
+        id: greet-step
+        uses: actions/hello-world-javascript-action
+        with: 
+          who-to-greet: YG
+
+      - name: Output time
+        run: echo "${{ steps.greet-step.outputs.time }}"
+
