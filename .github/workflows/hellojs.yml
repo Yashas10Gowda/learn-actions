@@ -1,5 +1,8 @@
 name: Simple JS execution
-on: [push, pull_request]
+on: 
+  push:
+  pull_request:
+    types: [closed, reopened, assigned, opened]
 jobs:
   simple-hello-in-js:
     runs-on: ubuntu-latest
