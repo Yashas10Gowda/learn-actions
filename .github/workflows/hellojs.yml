@@ -5,6 +5,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: list all files before checkout
+        run: ls
+
+      - name: checkout to the repo's particulars
+        uses: actions/checkout@v3.5.2
+
+      - name: list all files after checkout
+        run: ls
+
       - name: Running a 3rd party action
         id: greet-step
         uses: actions/hello-world-javascript-action@v1.1
