@@ -1,5 +1,5 @@
 name: Simple JS execution
-on: push
+on: [push, pull_request]
 jobs:
   simple-hello-in-js:
     runs-on: ubuntu-latest
