@@ -5,6 +5,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: print github values
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{ github.token }}"
+          
       - name: list all files before checkout
         run: ls
 
