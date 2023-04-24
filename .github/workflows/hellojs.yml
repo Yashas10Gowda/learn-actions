@@ -1,4 +1,4 @@
-name: Simple JS execution
+name: Simple JS execution.
 on: 
   pull_request:
     types: [closed, reopened, assigned, opened]
