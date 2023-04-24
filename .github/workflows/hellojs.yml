@@ -2,6 +2,11 @@ name: Simple JS execution
 on: 
   pull_request:
     types: [closed, reopened, assigned, opened]
+  push:
+    branches:
+      - master
+    paths:
+      - "**.txt"
 jobs:
   simple-hello-in-js:
     runs-on: ubuntu-latest
