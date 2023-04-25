@@ -15,7 +15,7 @@ jobs:
               run: echo "Hello, World"
             
             - name: Echo client payload
-              run: echo ${{ github.event.client_payload }}
+              run: echo ${{ github.event.client_payload.message }}
 
             - name: Multiline Commands
               run: |
