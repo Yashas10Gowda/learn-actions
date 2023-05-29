@@ -38,3 +38,10 @@ jobs:
             run: pwd
             shell: bash
         needs: [run-simple-shell-commands]
+
+    run-test:
+        runs-on: ubuntu-latest
+        steps:
+          - name: logging another workflow's environment variable here to test, ideally it should be undefined
+            run: |
+              echo "Workflow_ENV_VAR: ${ Workflow_ENV_VAR }" 
