@@ -44,4 +44,4 @@ jobs:
         steps:
           - name: logging another workflow's environment variable here to test, ideally it should be undefined
             run: |
-              echo "Workflow_ENV_VAR: ${ Workflow_ENV_VAR }" 
+              echo "Workflow_ENV_VAR: ${Workflow_ENV_VAR}" 
